@@ -1,0 +1,28 @@
+.toolbar{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3792cb;
+    border: 1px solid #0e2433;
+    padding: 20px;
+    color: white;
+    nav{
+        display: block;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+    }
+    span{
+        padding: 0 15px;
+    }
+   
+}
+section{
+    border: 1px solid black;
+    padding: 20px;
+    div{
+        padding-bottom: 5px;
+    }
+}

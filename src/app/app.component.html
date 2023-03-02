@@ -1,0 +1,19 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <nav>
+    <a href="/userInfo">User Information</a> |
+    <a href="/css/">About Us</a> |
+    <a href="/js/">Contact</a>
+  </nav>
+  <span>{{currentDate | date :'dd-MMMM-yy'}}</span>
+</div>
+<section>
+   <div><b>Name: </b> {{userInfo?.name}}</div>
+   <div><b>Username: </b> {{userInfo?.username}}</div>
+   <div><b>Email: </b> {{userInfo.email}}</div>
+   <div><b>Address: </b> {{userInfo.address.suite}} {{userInfo.address.street}}, {{userInfo.address.city}} Pincode :{{userInfo.address.zipcode}}</div>
+   <div><b>Phone Number: </b> {{userInfo.phone}}</div>
+   <div><b>Company: </b> {{userInfo.company.name}} {{userInfo.company.catchPhrase}}</div>
+</section>
+
+<router-outlet></router-outlet>
